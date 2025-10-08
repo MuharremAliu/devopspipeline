@@ -1,0 +1,11 @@
+{
+  "name": "skibidi-app",
+  "version": "1.0.0",
+  "main": "app/index.js",
+  "scripts": {
+    "start": "node app/index.js"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}

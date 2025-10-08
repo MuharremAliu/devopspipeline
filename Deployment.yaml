@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: skibidi-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: skibidi
+  template:
+    metadata:
+      labels:
+        app: skibidi
+    spec:
+      containers:
+        - name: skibidi
+          image: DOCKERHUB_USER/skibidi:latest   # replace DOCKERHUB_USER
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 3000
+          env:
+            - name: PORT
+              value: "3000"
