@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: skibidi
-          image: DOCKERHUB_USER/skibidi:latest   # replace DOCKERHUB_USER
+          image: MuharremAliu/skibidi:latest   # replace DOCKERHUB_USER
           imagePullPolicy: Always
           ports:
             - containerPort: 3000
